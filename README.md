@@ -1,6 +1,3 @@
-Sure, here's a short README file for the GitHub repository:
-
----
 
 # Task Manager Web App
 
