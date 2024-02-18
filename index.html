@@ -7,10 +7,24 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    
 <h2>Task Manager</h2>
-<input type="text" id="taskInput" placeholder="Enter a task...">
-<input type="datetime-local" id="taskTime">
+   <div class="container">
+    <div class="input-group">
+        <label for="taskInput">Task:</label>
+        <input type="text" id="taskInput" placeholder="Enter a task...">
+    </div>
+    
+    <div class="input-group">
+        <label for="taskTime">Date & Time(24hr):</label>
+        <input type="datetime-local" id="taskTime">
+        
+    </div>
+</div>
+
+    
 <button id="addBtn">Add Task</button>
+
 <table id="taskTable">
   <thead>
     <tr>
