@@ -1,36 +1,105 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f2f2f2;
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url("background.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 h2 {
-  color: #333;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.container {
+   display: flex;
+   justify-content: space-between;  
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.input-group {
+    flex: 1;
+    margin-right: 10px;
+     margin-bottom: 5px;
+}
+
+#taskInput, #taskTime {
+  width: 40%;
+  margin: 8px auto;
+  box-sizing: border-box;
+  padding: 7px;
+  font-size: 12px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.taskTime, .addBtn {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#addBtn:hover{
+    color: aliceblue;
+   }
+
+button {
+    padding: 7px 14px;
+    font-size: 16px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border: 2px solid navajowhite;
+    border-radius: 5px;
+    color: navajowhite;
+    background: transparent;
 }
 
 table {
-  width: 50%;
+  width: 60vw;
   margin: 0 auto;
   border-collapse: collapse;
+  border-radius: .8rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-top: 20px
 }
 
 th, td {
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 1px solid #172a45;
   text-align: center;
 }
 
-th {
+ th {
   background-color: #172a45;
   color: #fff;
+  cursor: pointer;
 }
 
 tr:nth-child(even) {
-  background-color: #f0f8ff; /* Light blue */
+  background-color: #f0f8ff; 
 }
 
 tr:nth-child(odd) {
-  background-color: #fff; /* White */
+  background-color: #fff; 
 }
 
 .completed {
@@ -44,22 +113,4 @@ tr:nth-child(odd) {
   border: none;
   border-radius: 3px;
   cursor: pointer;
-}
-
-.taskInput {
-  width: 50%;
-  padding: 8px;
-  margin: 8px auto;
-  border-radius: 3px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-.taskTime, .addBtn {
-  width: 100%;
-  padding: 8px;
-  margin: 8px 0;
-  border-radius: 3px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
 }
